@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css">
+		<title>Video Club</title>
+	</head>
+	<body  id="main-img">
+		<header>
+			<h1>Find everything about your favourite movies!</h1>
+		</header>
+		<div class="searchbar">
+			<input type="text" placeholder="Search.." id="movie">
+			<img alt="" style="margin-left:20px" src="emptystar.png" id="imgClickAndChange" onclick="changeImage()"  />
+		</div>
+		<section>
+			<div class = "login-bookmarks">
+				<a href="login.html" class="btns">Login</a>
+			</div>
+			<div class = "login-bookmarks">
+				<a href="bookmarks.html" class="btns">My Movies</a>
+			</div>
+		</section>
+		<section>
+			<div style="text-align:center; margin:40px; float:left; width: 40%">
+				<img id="image" src="">
+			</div>
+			<div style="text-align:center; margin:40px; float:right; width: 40%">
+				<textarea id="text" placeholder="Movie Information" rows="21" cols="50" readonly></textarea>
+				<button id="full" onclick="showFull()">Show full info</button>
+			</div>
+		</section>
+		<script src="main.js"></script>
+	</body>
+</html>
